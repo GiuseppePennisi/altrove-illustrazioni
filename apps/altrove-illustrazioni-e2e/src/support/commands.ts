@@ -10,19 +10,20 @@
 // https://on.cypress.io/custom-commands
 // ***********************************************
 
+// commands.d.ts
 declare global {
-    namespace Cypress {
-        interface Chainable<Subject> {
-            login(email: string, password: string): void;
-        }
+    // Non usare `namespace` ma esporta direttamente
+    interface Chainable {
+        login(email: string, password: string): void;
     }
 }
+export {};
 
 // -- This is a parent command --
+// commands.ts
 Cypress.Commands.add('login', (email, password) => {
     console.log('Custom command example: Login', email, password);
 });
-//
 // -- This is a child command --
 // Cypress.Commands.add("drag", { prevSubject: 'element'}, (subject, options) => { ... })
 //
