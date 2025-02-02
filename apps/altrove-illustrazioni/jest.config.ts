@@ -1,10 +1,12 @@
-export default {
-  displayName: 'altrove-illustrazioni',
-  preset: '../../jest.preset.js',
-  transform: {
-    '^(?!.*\\.(js|jsx|ts|tsx|css|json)$)': '@nx/react/plugins/jest',
-    '^.+\\.[tj]sx?$': ['babel-jest', { presets: ['@nx/next/babel'] }],
-  },
-  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  coverageDirectory: '../../coverage/apps/altrove-illustrazioni',
+const jestConfig = {
+    displayName: 'altrove-illustrazioni',
+    preset: '../../jest.preset.js',
+    transform: {
+        '^(?!.*\\.(js|jsx|ts|tsx|css|json)$)': '@nx/react/plugins/jest',
+        '^.+\\.[tj]sx?$': ['babel-jest', { presets: ['@nx/next/babel'] }],
+    },
+    moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
+    coverageDirectory: '../../coverage/apps/altrove-illustrazioni',
 };
+
+export default jestConfig;
