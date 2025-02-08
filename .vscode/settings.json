@@ -16,5 +16,6 @@
   "[typescript]": {
       "editor.defaultFormatter": "esbenp.prettier-vscode",
       "editor.formatOnSave": true
-  }
+  },
+  "terminal.integrated.fontFamily": "Cascadia Code NF"
 }
