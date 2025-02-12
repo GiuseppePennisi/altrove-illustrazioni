@@ -1,3 +1,4 @@
+import { Navbar } from '@altrove-illustrazioni/navbar';
 import styles from './page.module.css';
 
 export default function Index() {
@@ -6,5 +7,9 @@ export default function Index() {
      *
      * Note: The corresponding styles are in the ./index.scss file.
      */
-    return <div className={styles.page}></div>;
+    return (
+        <div className={styles.page}>
+            <Navbar />
+        </div>
+    );
 }

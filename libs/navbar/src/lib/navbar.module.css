@@ -1,0 +1,9 @@
+.navbar {
+    & .navigation-link {
+        @apply font-medium px-1 py-0 text-customPalette-offWhite text-lg transition-all duration-500 ease-linear;
+
+        &:hover {
+            @apply text-customPalette-lightGreen;
+        }
+    }
+}

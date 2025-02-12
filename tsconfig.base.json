@@ -14,7 +14,12 @@
         "skipLibCheck": true,
         "skipDefaultLibCheck": true,
         "baseUrl": ".",
-        "paths": {}
+        "paths": {
+            "@altrove-illustrazioni/navbar": ["libs/navbar/src/index.ts"],
+            "@altrove-illustrazioni/navbar/server": [
+                "libs/navbar/src/server.ts"
+            ]
+        }
     },
     "exclude": ["node_modules", "tmp"]
 }
